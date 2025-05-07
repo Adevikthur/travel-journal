@@ -92,3 +92,71 @@ article.journal-entry .main-image {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 25px 20px;
+  }
+  
+  article.journal-entry {
+    flex-direction: column;
+    padding: 12px;
+  }
+  
+  article.journal-entry .main-image-container {
+    width: 100%;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  
+  .info-container h2.entry-title {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 15px 10px;
+  }
+  
+  header {
+    height: 45px;
+  }
+  
+  header > img {
+    width: 24px;
+  }
+  
+  header > h1 {
+    font-size: 1rem;
+  }
+  
+  article.journal-entry {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  article.journal-entry .main-image-container {
+    height: 160px;
+    margin-bottom: 12px;
+  }
+  
+  .info-container h2.entry-title {
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .info-container p.trip-dates {
+    font-size: 0.8rem;
+  }
+  
+  .info-container p.entry-text {
+    font-size: 0.75rem;
+  }
+}
